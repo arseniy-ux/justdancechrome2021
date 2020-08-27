@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>JUSTDANCE2021</title>
+</head>
+<script>
+   
+    
+
+    var phoneconect = false;
+
+    var connectcode = 0;
+
+    var cd1 = Math.ceil(Math.random() * 99);
+
+    var cd2 = Math.ceil(Math.random() * 99);
+
+    var cd3 = Math.ceil(Math.random() * 99);
+    function cd() {
+        document.getElementById('cod-num').innerHTML = cd1 + "-" + cd2 + "-" + cd3;
+        var connectcode = cd1 + cd2 + cd3;
+        document.getElementById('txt').innerHTML = "Waiting for smartphone connection...";
+    }
+
+
+    document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+
+        var phonecon = new Audio('/audio/phone_connected.wav');
+    phonecon.play()
+
+        var code = $('#code');
+        console.log(code.attr('class'));
+        code.removeAttr('class', 'code');
+        code.attr('class',  'codef')
+        var QR = $('#QR');
+        console.log(QR.attr('class'));
+        QR.removeAttr('class', 'QR');
+        QR.attr('class',  'QRf')
+        var connect = $('#connect');
+        console.log(connect.attr('class'));
+        connect.removeAttr('class', 'connect');
+        connect.attr('class',  'connectf')
+
+        var phoneconect = true;
+        setInterval( go, 1400)
+    }
+}
+
+document.documentElement.requestFullscreen();
+</script>
+<body style="height: 854px;">
+    <div style="width: 0;height: 0;"> <video id="play" class="play"  autoplay onended="end()" src="/no_huds/ubilogo.mp4"></video></div>
+   
+    <div id="JustDance" class="JustDance">
+        <div style="width: 0;height: 0;" id="cubes" class="cubes">
+            <img style=" visibility: hidden;width: 1200px;position: relative;left: 198px;top: 38px;" src="/img/menu.png" alt="">
+        </div>
+        <div style="width: 0;height: 0;"><img class="c1" src="/img/Gamemode_coach_01.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c2" src="/img/Gamemode_coach_02.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c3" src="/img/Gamemode_coach_03.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c4" src="/img/Gamemode_coach_04.png" alt=""></div>
+   <a onclick="" style="text-decoration: none;" href="#"><div id="selectJustDance" class="selectJustDance">
+            <h1 id="nameMode" class="nameMode">Just Dance</h1>
+            <h3 id="desc" class="desc">Enjoy your favorite hits with <br> your friends and family!</h3>
+        </div></a>     
+    </div>
+    <div id="scene" class="scene">
+        <div id="connect" class="none">
+            <div id="phone" class="none"></div>
+            <li></li>
+            <li></li>
+            <li></li>
+            <div id="wifi" class="none"></div>
+            <li style="bottom: 70px;"></li>
+            <li style="bottom: 70px;"></li>
+            <li style="bottom: 70px;"></li>
+            <div id="laptop" class="none"></div>
+            <h2 id="coo" class="none">⠀⠀⠀⠀⠀Connect your PC and your <br> smartphone to the same WI-FI or LAN <br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ network</h2>
+        </div>
+        
+        <div id="QR" class="none">
+            <h2 id="coo2" class="none">⠀⠀⠀⠀⠀Scan the QR code to download the<br> <h2 style="color: aqua;color: aqua;position: relative;top: 450px;left: 27px;">Dance Controller</h2> <h2 style="position: relative;top: 414px;position: relative;left: 54px;width: 327px;top: 414px;">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ app to your <br>⠀⠀⠀⠀ smartphone</h2></h2>
+             
+        </div>
+
+
+       
+        <div id="code" class="none">
+            <div id="wind" class="none">
+                <div style="width: 0;height: 0;"><h1 id="cod-num" class="none"></h1></div>
+                
+                <div id="hand" class="none"></div><div style="width: 0;height: 0;">
+            </div>
+            <h1 id="txt" class="none"></h1>
+            <div style="width: 0;height: 0;"><div id="load" class="none"></div></div> </div>
+        </div>
+
+       
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        function end(){
+            cd()
+            var endy = $('#play');
+        console.log(endy.attr('class'));
+        endy.removeAttr('class', 'play');
+        endy.attr('class',  'none') 
+
+        var connect = $('#connect');
+        console.log(connect.attr('class'));
+        connect.removeAttr('class', 'none');
+        connect.attr('class',  'connect')
+
+        var phone = $('#phone');
+        console.log(phone.attr('class'));
+        phone.removeAttr('class', 'none');
+        phone.attr('class',  'phone')
+
+        var wifi= $('#wifi');
+        console.log(wifi.attr('class'));
+        wifi.removeAttr('class', 'none');
+        wifi.attr('class',  'wifi')
+
+        var laptop = $('#laptop');
+        console.log(laptop.attr('class'));
+        laptop.removeAttr('class', 'none');
+        laptop.attr('class',  'laptop')
+
+        var coo = $('#coo');
+        console.log(coo.attr('class'));
+        coo.removeAttr('class', 'none');
+        coo.attr('class',  'coo')
+
+
+        var QR = $('#QR');
+        console.log(QR.attr('class'));
+        QR.removeAttr('class', 'none');
+        QR.attr('class',  'QR')
+
+        var code = $('#code');
+        console.log(code.attr('class'));
+        code.removeAttr('class', 'none');
+        code.attr('class',  'code')
+
+        var coo2 = $('#coo2');
+        console.log(coo2.attr('class'));
+        coo2.removeAttr('class', 'none');
+        coo2.attr('class',  'coo2')
+
+        var wind = $('#wind');
+        console.log(wind.attr('class'));
+        wind.removeAttr('class', 'none');
+        wind.attr('class',  'wind')
+
+        var codenum = $('#cod-num');
+        console.log(codenum.attr('class'));
+        codenum.removeAttr('class', 'none');
+        codenum.attr('class',  'code-num')
+
+        var hand = $('#hand');
+        console.log(hand.attr('class'));
+        hand.removeAttr('class', 'none');
+        hand.attr('class',  'hand')
+
+        var txt = $('#txt');
+        console.log(txt.attr('class'));
+        txt.removeAttr('class', 'none');
+        txt.attr('class',  'txt')
+
+        var l = $('#load');
+        console.log(l.attr('class'));
+        l.removeAttr('class', 'none');
+        l.attr('class',  'load')
+var popup = new Audio('/audio/popup_standard.wav');
+    popup.play()
+        
+        }
+function check(){
+    if (phoneconect == true){
+            window.location.href ='index.html';
+        }
+}
+
+function go(){
+    window.location.href ='index.html'
+}
+
+        
+    </script>
+</body>
+</html>

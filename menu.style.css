@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, img, a{
+    font-family: 'Noto Sans JP', sans-serif;
+    user-select: none;
+}
+.scene{
+    height: 714px;
+    background-color: white;
+}
+.selectJustDance{
+    background-color: #fa7300;
+    width: 420px;
+    height: 150px;
+    position: relative;
+    border-radius: 15px;
+    top: 630px;
+    left: 550px;
+    visibility: hidden;
+}
+
+.nameMode{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 85px;
+    font-size: 45px;
+    visibility: hidden;
+
+}
+
+.desc{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 85px;
+    visibility: hidden;
+}
+
+.c1{
+    z-index: 135;position: relative;width: 401px;left: 194px;bottom: 70px;top: 0px;
+    animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam1 2s infinite;
+  visibility: hidden;
+}
+
+@keyframes sweam1 {
+    from{
+        left: 194px;
+    }
+
+    50%{
+        left: 215px;
+    }
+    to{
+        left: 194px;
+    }
+}
+
+.c2{
+    width: 430px;position: relative;z-index: 101;left: 408px; bottom: 111px;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam2 4.5s infinite;
+  visibility: hidden;
+
+}
+
+@keyframes sweam2 {
+    from{
+        left: 408px;
+    }
+
+    50%{
+        left: 377px;
+    }
+    to{
+        left: 408px;
+    }
+}
+.c3{
+    position: relative;width: 473px;left: 684px; z-index: 100;bottom: 179px;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam3 4s infinite;
+  visibility: hidden;
+}
+
+@keyframes sweam3 {
+    from{
+        left: 684px;
+    }
+
+    50%{
+        left: 640px;
+    }
+    to{
+        left: 684px;
+    }
+}
+
+.c4{
+    width: 600px;position: relative;left: 800px;top: 35px;z-index: 100;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam4 3.5s infinite;
+  visibility: hidden;
+}
+
+@keyframes sweam4 {
+    from{
+        left: 800px;
+    }
+
+    50%{
+        left: 821px;
+    }
+    to{
+        left: 800px;
+    }
+}
+
+.play{
+    height: 864px;position: relative;z-index: 1111;
+}
+
+.none{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+img{
+    pointer-events: none;
+}
+
+#play{
+    pointer-events: none;
+}
+
+.connect{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    left: 50px;
+    bottom: 122px;
+    top: 0px;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: swim;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+
+
+@keyframes swim{
+    from{
+        left: 100px;
+        opacity: 0;
+    }
+
+    to{
+        left: 50px;
+        opacity: 1;
+    }
+}
+.phone{
+    background: url(/img/smartphone.png) no-repeat;
+    background-size: 69%;
+    height: 156px;
+    width: 127px;
+    position: relative;
+    left: 157px;
+}
+
+li{
+    position: relative;
+    left: 196px
+}
+.wifi{
+    background: url(/img/wifi.jpg) no-repeat;
+    background-size: 69%;
+    height: 156px;
+    width: 127px;
+    position: relative;
+    left: 154px;
+    top: 10px;
+}
+
+.laptop{
+    background: url(/img/laptop.png) no-repeat;
+    background-size: 69%;
+    position: relative;
+    bottom: 70px;
+    width: 122px;
+    height: 108px;
+    left: 156px;
+}
+
+.coo{
+    position: relative;
+    width: 446px;
+    bottom: 70px;
+    font-family: sans-serif;
+    right: 15px;
+}
+
+.QR{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    left: 561px;;
+    bottom: 541px;
+    animation-duration: 2s;
+    animation-name: swim2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes swim2{
+    from{
+        left: 611px;
+        opacity: 0;
+    }
+
+    to{
+        left: 561px;
+        opacity: 1;
+    }
+}
+
+.phone_scene{
+    height: 714px;
+}
+
+.coo2{
+    position: relative;
+    font-family: sans-serif;
+    bottom: 0px;
+    top: 460px;
+    right: 78px;
+    width: 489px;
+}
+
+.code{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    bottom: 1081px;
+    left: 1060px;
+    animation-duration: 3s;
+    animation-name: swim3;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes swim3{
+    from{
+        left: 1100px;
+        opacity: 0;
+    }
+
+    to{
+        left: 1060px;
+        opacity: 1;
+    }
+}
+
+.wind{
+    border-radius: 15px;
+    position: relative;
+    left: 60px;
+    top: 38px;
+    width: 278px;
+    height: 104px;
+    border: black 5px solid;
+}
+
+.hand{
+    background: url(/img/smartphone_in_hand.png) no-repeat;
+    background-size: 108%;
+    position: relative;
+    width: 266px;
+    height: 325px;
+    left: 0px;
+    bottom: 0px;
+    top: 105px;
+}
+
+.code-num{
+    position: relative;
+    width: 255px;
+    font-size: 52px;
+    left: 26px;
+    top: 9px;
+    color: #58f882;
+}
+
+.txt{
+    width: 579px;
+    height: 51px;
+    position: relative;
+    right: 315px;
+    top: 187px;
+    color: #b2b2b2;
+}
+
+.load{
+    background: url(/img/load.png);
+    background-size: 100%;
+    animation-name: rotation;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 290px;
+    top: 133px;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+  }
+
+
+  .codef{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    bottom: 1081px;
+    left: 1060px;
+    animation-duration: 1s;
+    animation-name: swim66;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+@keyframes swim66{
+    from{
+        left: 1060px;
+        opacity: 1;
+        
+    }
+
+    to{
+        left: 1100px;
+        opacity: 0;
+    }
+}
+
+
+.QRf{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    left: 561px;;
+    bottom: 541px;
+    animation-duration: 1s;
+    animation-name: swim44;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+@keyframes swim44{
+    from{
+        left: 561px;
+        opacity: 1;
+    }
+
+    to{left: 611px;
+        opacity: 0;
+    }
+}
+
+.connectf{
+    width: 400px;
+    height: 450px;
+    background-color: #f7e9f8;
+    position: relative;
+    z-index: 999;
+    left: 50px;
+    bottom: 122px;
+    top: 0px;
+    border: 3px solid #58cd6c;
+    border-width: 75px 5px 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: swim22;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+
+@keyframes swim22{
+    from{
+        left: 50px;
+        opacity: 1;
+    }
+
+    to{
+        left: 100px;
+        opacity: 0;
+    }
+}

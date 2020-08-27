@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bkg1{
+    background-color: rgb(16, 223, 95);
+    border-radius: 37px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 500px;
+    top: 150px;
+    opacity: 42%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: bkg1 13s infinite;
+}
+
+
+@keyframes bkg1{
+    from{
+        left: 500px;
+    }
+    50%{
+        left: 800px;
+    }
+
+    to{
+        left: 500px;
+    }
+}
+
+.bkg2{
+    background-color: rgb(16, 223, 95);
+    border-radius: 37px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 300px;
+    top: 100px;
+    opacity: 42%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: bkg2 10s infinite;
+}
+
+
+@keyframes bkg2{
+    from{
+        left: 300px;
+    }
+    50%{
+        left: 600px;
+    }
+
+    to{
+        left: 300px;
+    }
+}
+
+.bkg3{
+    background-color: rgb(16, 223, 95);
+    border-radius: 37px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: 31px;;
+    opacity: 54%;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: bkg3 6s infinite;
+}
+
+
+@keyframes bkg3{
+    from{
+        left: 50px;
+    }
+    50%{
+        left: 317px;
+    }
+
+    to{
+        left: 50px;
+    }
+}
+
+.new1{
+    width: 700px;
+    position: relative;
+    z-index: 1;
+    left: 290px;
+    top: 208px;
+    opacity: 144%;
+    border-radius: 36px;
+}
+
+@keyframes beat{
+    0%{
+        width: 400px;
+    }
+    50%{
+        width: 420px;
+        left: 1050px;;
+    }
+    100%{
+        width: 400px;
+    }
+}
+
+.category-song{
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    top: 12px;
+    left: 21px;
+    width: 205px;
+    background: rgb(144, 146, 142) ;
+  }
+
+
+  .category-news{
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    top: 28px;
+    left: 21px;
+    width: 205px;
+    background: rgb(47, 189, 255) ;
+  }
+
+  .avatars-box{
+    height: 519px;
+    border-radius: 10px;
+    position: relative;
+    top: 287px;
+    left: 21px;
+    width: 205px;
+    background: #c9ecec;
+    
+  }
+
+  .to-level{
+    height: 59px;
+      background-color: black;
+      position: relative;
+      width: 3px;
+      left: 95px;
+      top: 170px;
+  }
+  
+  .level{
+    background-color: #005aff;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      top: 171px;
+      border-radius: 99px;
+      border: 2px solid rgb(50, 14, 209);
+      left: 70px;
+  }
+  
+  .country{
+    width: 53px;
+      position: relative;
+      top: 138px;
+      pointer-events: none;
+      left: 70px;
+  }
+
+  .avatar-1{
+    width: 169px;
+      position: relative;
+      top: 180px;
+      left: 15px;
+      z-index: 1;
+      background: url(/img/31.png) no-repeat;
+      height: 169px;
+      background-size: 100%;
+      pointer-events: none;
+  }

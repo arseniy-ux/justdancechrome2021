@@ -1,0 +1,1815 @@
+*{
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+ -webkit-scrollbar:none 
+}
+
+ video{
+  pointer-events: none; 
+ }
+
+
+.body-2{
+  background: url(https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FNewowrldalt_banner_bkg.png?v=1597827638588) no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.body-3{
+  background: url(https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FNewworldalt_sitebkg.png?v=1597827681979) no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.body-song{
+  background-color: black;
+}
+
+.body-transition{
+  background-color: #fff;
+}
+
+
+.select{
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 312px;
+ visibility: hidden;
+}
+
+.select-2{
+  width: 500px;
+  margin-left: 500px; 
+  margin-top: 312px;
+  animation-duration: 1s;
+  animation-name:swim;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  position: relative;
+  pointer-events: none; 
+  
+}
+@keyframes swim {
+    0% {
+      margin-top: 130px;
+      opacity:0.5;
+    }
+    100% {
+      margin-top: 137px;
+      opacity:1 ;
+  }
+}
+.album {
+  margin-left: 450px;
+  animation-duration: 4.2s;
+  animation-name: slidein;
+  width: 600px;
+  height: 600px;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none; 
+  top: 120px;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 15%;
+    opacity: 0;
+  }
+
+  30% {
+    margin-left: 450px;
+    opacity: 1;
+  }
+
+  50%{
+
+  }
+
+  70%{
+
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+
+  100%{
+    opacity: 0;
+  }
+}
+
+
+  .album-no {
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+.icon{
+  background: url(/img/1595180403.png) no-repeat;
+  background-size:100%;
+  width: 90px;
+  height: 90px;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  pointer-events: none; 
+}
+
+.dance-button{
+  position: relative;
+  margin-top: 1px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  visibility: visible;
+  border-radius: 62px;
+  box-shadow: -1px 1px 9px 5px #10ff18;
+  left: 1273px;
+  top: 752px;
+  width: 221px;
+
+  animation-duration: .5s;
+  animation-name:shadow-play;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+  @keyframes shadow-play{
+    from{
+      box-shadow: -1px 1px 9px 5px #10ff18;
+    }
+    to{
+      box-shadow: -1px 1px 9px 5px #53bd0d;
+    }
+  }
+
+.dance-hide{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.inGame-no{
+  width: 0;
+  height: 0;
+}
+
+.inGame-yes{
+  width: 100%;
+  height: 860px;
+}
+
+
+.inGame-no-g{
+  width: 0;
+  height: 0;
+}
+
+.inGame-yes-g{
+  width: 100%;
+  height: 860px;
+}
+
+.select-none{
+  width:0px;
+ visibility: hidden;
+}
+
+.all_menu_album{
+  height: 0;
+}
+
+.line_player_true{
+  position: fixed;
+  top: 47px;
+  visibility: visible;
+  width: 158px;
+  left: 715px;
+}
+
+.line_player_false{
+  position: fixed;
+  left: 700px;
+  top: 47px;
+  visibility: hidden;
+}
+
+.nickname_true{
+  position: fixed;
+  visibility: visible;
+  color: white;
+  top: 5px;
+  left: 740px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nickname_false{
+  position: fixed;
+  left: 700px;
+  top: 5px;
+  visibility: hidden;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.feedback-none{
+  position: fixed;
+  left: 700px;
+  top: 55px;
+  visibility: hidden;
+}
+
+.feedback-bad{
+  position: fixed;
+  background: url(/img/Feedback_bad.png) no-repeat;
+  background-size: 100%;
+  left: 755px;
+  width: 80px;
+  height: 80px;
+  top: 43px;
+  animation-delay:9s;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  transform: rotate(-45deg);
+  z-index: 100;
+}
+
+.feedback-ok{
+  position: fixed;
+  top: 55px;
+  background: url(/img/Feedback_ok.png) no-repeat;
+  background-size: 100%;
+  height: 50px;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  width: 100px;
+  left: 750px;
+  transform: rotate(-45deg);
+}
+
+.feedback-good{
+  position: fixed;
+  left: 700px;
+  top: 55px;
+  background: url(/img/Feedback_good.png) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 50px;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  transform: rotate(-45deg);
+}
+
+.feedback-super{
+  position: fixed;
+  background: url(/img/Feedback_super.png) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  top: 55px;
+  height: 70px;
+  left: 699px;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  transform: rotate(-45deg);
+}
+
+.feedback-perfect{
+  position: fixed;
+  background: url(/img/Feedback_perfect.png) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  transform: rotate(-45deg);
+  z-index: 10;
+  top: 39px;
+    height: 70px;
+    left: 690px;
+}
+
+.feedback-yeah{
+  position: fixed;
+  background: url(/img/Feedback_gold.png) no-repeat;
+  background-size: 100%;
+  animation-name: pulse;
+  width: 400px;
+  height: 88px;
+  left: 602px;
+  top: 36px;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s  infinite;
+}
+
+.feedback-goldbad{
+  position: fixed;
+  background: url(/img/Feedback_goldbad.png) no-repeat;
+  background-size: 100%;
+  animation-name: NewFeedbackScale;
+  left: 760px;
+  width: 80px;
+  height: 80px;
+  top: 40px;
+  transform: rotate(5deg);
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  30% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(.85);
+    opacity: 0;
+  }
+}
+
+
+@keyframes feedl {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.feedbacky{
+  position: fixed;
+  background: url(/img/label-prfct.png) no-repeat;
+  background-size: 100%;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 1;
+  animation: feedl 1.3s infinite;
+  width: 60px;
+  height: 100px;
+  left: 760px;
+  top: 0;
+}
+
+.feedbackys{
+  position: fixed;
+  background: url(/img/label-spr.png) no-repeat;
+  background-size: 100%;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 1;
+  animation: feedl 1.3s infinite;
+  width: 60px;
+  height: 100px;
+  left: 760px;
+  top: 0;
+}
+
+.feedbackyg{
+  position: fixed;
+  background: url(/img/label-good.png) no-repeat;
+  background-size: 100%;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 1;
+  animation: feedl 1.3s infinite;
+  width: 60px;
+  height: 100px;
+  left: 760px;
+  top: 0;
+}
+
+.starbar_play_true{
+  height: 500px;
+  position: relative;
+  top: 212px;
+  left: 28px;
+  visibility: visible;
+  width: 0;
+}
+
+.starbar_play_false{
+  position: relative;
+  height: 0px;
+  top: 230px;
+  left: 10px;
+  visibility: hidden;
+}
+
+.starbar{
+  width: 0;
+  height: 0;
+}
+
+.blue_starbar{
+  width: 63px;
+  height: 0;
+  background-color: blue;
+}
+
+.star1-und{
+  background: url(/img/Starmask.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  position: relative;
+  top: 75px;
+  left: 30px;
+
+}
+
+.star1-yes{
+  background: url(/img/Star_glow.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 1s;
+  top: 75px;
+  left: 30px;
+    transform: rotate(45deg);
+}
+
+.star1-super{
+  background: url(/img/Star_glow_plus.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  top: 75px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+.star1-mega{
+  background: url(/img/Star_glow_plus_more.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  top: 75px;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+@keyframes pulse-star1 {
+  from {
+    transform: rotate(0deg);
+    animation-delay: 1s;
+    width: 90px;
+    height: 90px;
+  }
+  50% {
+    transform: rotate(45deg);
+    animation-delay: 1s;
+    width: 90px;
+    height: 90px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+.star2-und{
+  background: url(/img/Starmask.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  position: relative;
+  bottom: 78px;
+  left: 36px;
+}
+
+.star2-yes{
+  background: url(/img/Star_glow.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 2s;
+  bottom: 78px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star2-super{
+  background: url(/img/Star_glow_plus.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 78px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star2-mega{
+  background: url(/img/Star_glow_plus_more.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 78px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star3-und{
+  background: url(/img/Starmask.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  position: relative;
+  bottom: 230px;
+  left: 36px;
+
+}
+
+.star3-yes{
+  background: url(/img/Star_glow.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 3s;
+  bottom: 230px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star3-super{
+  background: url(/img/Star_glow_plus.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 230px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star3-mega{
+  background: url(/img/Star_glow_plus_more.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 230px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star4-und{
+  background: url(/img/Starmask.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  position: relative;
+  bottom: 380px;
+  left: 36px;
+}
+
+.star4-yes{
+  background: url(/img/Star_glow.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 3.5s;
+  bottom: 380px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star4-super{
+  background: url(/img/Star_glow_plus.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 380px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star4-mega{
+  background: url(/img/Star_glow_plus_more.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 380px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star5-und{
+  background: url(/img/Starmask.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  position: relative;
+  bottom: 530px;
+  left: 36px;
+}
+
+.star5-yes{
+  background: url(/img/Star_glow.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4.3s;
+  bottom: 530px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star5-super{
+  background: url(/img/Star_glow_plus.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 530px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.star5-mega{
+  background: url(/img/Star_glow_plus_more.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  position: relative;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: pulse-star1 4s;
+  bottom: 530px;
+  left: 29px;
+  transform: rotate(45deg);
+}
+
+.feed-element{
+  position: fixed;
+  background-color: rgb(9, 217, 245);
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: sweam 1.8ss infinite;
+    left: 750px;
+    top: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 7px white;
+    width: 5px;
+    height: 5px;
+}
+
+
+@keyframes sweam {
+  0% {
+    left: 833px;
+    top: 54px;
+    opacity: 0;
+}
+
+50% {
+  opacity: 0.8;
+}
+100% {
+    left: 868px;
+    top: 94px;
+    opacity: 0;
+}
+  
+  from{
+    
+  }
+
+  to{
+    
+  }
+}
+
+@keyframes sweam-2 {
+  from{
+    left: 748px;
+    top: 73px;
+    opacity: 0;
+  }
+
+  to{
+    left: 739px;
+    top: 108px;
+    opacity: 0.8;
+  }
+}
+
+.feed-element-2{
+  position: fixed;
+  background-color: rgb(9, 217, 245);
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: sweam-2 1.8s infinite;
+    right: 750px;
+    top: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 7px white;
+    width: 5px;
+    height: 5px;
+}
+
+.feed-element-none{
+  position: fixed;
+  visibility: hidden;
+}
+
+
+@keyframes sweam-3 {
+  from{
+    left: 836px;
+    top: 73px;
+    opacity: 0;
+  }
+
+  to{
+    left: 866px;
+    top: 108px;
+    opacity: 0.8;
+  }
+}
+
+.feed-element-3{
+  position: fixed;
+  background-color: rgb(9, 217, 245);
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: sweam-3 1.8s infinite;
+    right: 750px;
+    top: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px 7px white;
+    width: 5px;
+    height: 5px;
+}
+
+.gold_none{
+  width: 0;
+  height: 0;
+  visibility:hidden;
+  position: fixed;
+  z-index: 10;
+}
+
+.gold_yeah{
+  width: 1514px;
+  position: relative;
+  bottom: 11px;
+  right: 5px;
+  z-index: 10;
+}
+
+.category-song{
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  top: 12px;
+  left: 21px;
+  width: 205px;
+  background: greenyellow ;
+}
+
+.menu{
+  width: 0;
+  height: 0;
+}
+
+.avatars-box{
+  height: 519px;
+  border-radius: 10px;
+  position: relative;
+  top: 188px;
+  left: 21px;
+  width: 205px;
+  background: #c9ecec;
+  
+}
+
+.avatar-1{
+  width: 169px;
+    position: relative;
+    top: 180px;
+    left: 15px;
+    z-index: 1;
+    background: url(/img/31.png) no-repeat;
+    height: 169px;
+    background-size: 100%;
+    pointer-events: none;
+}
+
+.avatar-2{
+  width: 169px;
+    position: relative;
+    top: 180px;
+    z-index: 1;
+    background: url(/img/80.png) no-repeat;
+    height: 169px;
+    background-size: 100%;
+    pointer-events: none;
+    width: 154px;
+    left: 23px;
+}
+
+.avatar-3{
+  width: 169px;
+    position: relative;
+    top: 180px;
+    left: 15px;
+    z-index: 1;
+    background: url(/img/11.png) no-repeat;
+    height: 169px;
+    background-size: 100%;
+    pointer-events: none;
+}
+
+.to-level{
+  height: 59px;
+    background-color: black;
+    position: relative;
+    width: 3px;
+    left: 95px;
+    top: 170px;
+}
+
+.level{
+  background-color: #005aff;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 171px;
+    border-radius: 99px;
+    border: 2px solid rgb(50, 14, 209);
+    left: 70px;
+}
+
+.country{
+  width: 53px;
+    position: relative;
+    top: 138px;
+    left: 70px;
+}
+
+.pebn{
+  background-color: greenyellow;
+    width: 1200px;
+    height: 2px;
+    position: relative;
+    left: 280px;
+    bottom: 512px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 9px 5px #10ff18;
+}
+
+.song-new-world{
+  position: relative;
+  border-radius: 7px;
+  width: 200px;
+  bottom: 684px;
+  left: 286px;
+}
+
+.song-new-world-alt{
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+  left: 525px;
+  bottom: 885px;
+}
+
+.song-love{
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+  left: 755px;
+  bottom: 885px;
+}
+
+.song-365{
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+  left: 987px;
+  bottom: 885px;
+}
+.song-rythz{
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+  left: 1228px;
+  bottom: 885px;
+}
+
+.selector{
+  width: 182px;
+  height: 182px;
+ /* border: 2px solid rgb(12, 180, 26);
+  position: relative;
+  border-radius: 10px;
+  left: 267px;
+  bottom: 489px;
+  overflow: hidden;*/
+  visibility: hidden;
+}
+
+.name-of-song{
+  position: relative;
+    background-color: greenyellow;
+    border-radius: 10px;
+    animation: razt 1s ;
+    z-index: 1;
+    width: 378px;
+    height: 74px;
+    left: 371px;
+    bottom: 470px;
+}
+
+@keyframes razt{
+  from{
+    width: 0;
+  }
+  to{
+    width: 378px;
+  }
+}
+
+
+@keyframes raztb{
+  from{
+    width: 0;
+  }
+  to{
+    width: 304px;
+  }
+}
+.autoplay {
+  bottom: 490px;
+  position: relative;
+  border-radius: 15px;
+  width: 550px;
+  left: 531px;
+}
+
+
+.hide {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  position: relative;
+}
+
+.pictos-help{
+  position: relative;
+  width: 375px;
+  height: 5px;
+  top: 800px;
+  background-color: black;
+  left: 1161px;
+}
+
+.logo{
+  width: 328px;
+  z-index: 10;
+  position: relative;
+  left: 50px;
+  top: 250px;
+  opacity: 0;
+  animation: transition-logo 2s;
+}
+
+@keyframes transition-logo {
+
+  from{
+    left: 50px;
+    opacity: 1;
+  }
+
+  50%{
+    left: 650px;
+    opacity: 1;
+  }
+  to{
+    left: 630px;
+    opacity: 0;
+  }
+}
+
+.none{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.back_btn{
+  width: 32px;
+  height: 32px;
+  background-color:red;
+  border-radius: 999px;
+  position: relative;
+  top: 752px;
+  left: 47px;
+}
+
+.back-h2{
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  left: 40px;
+}
+
+
+/*.pictos{
+  background-color: #fff;
+    position: relative;
+    height: 3px;
+    width: 294px;
+    left: 1242px;
+    top: 830px;
+}.beat{
+    position: relative;
+    height: 30px;
+    left: 1099px;
+    top: 810px;
+    width: 152px;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: beat .5s infinite;
+}*/
+
+@keyframes beat{
+  100% {
+    opacity: 1;
+    transform: scale(1.0, 1.0);
+}
+
+
+30% {
+    opacity: 1;
+    transform: scale(1.1, 1.0);
+}
+
+00% {
+    opacity: 1;
+    transform: scale(1.0, 1.0);
+}
+}
+
+.background_bar{
+  background: linear-gradient(to top right, blue, #7abbf8);
+  height: 0;
+    position: absolute;
+    left: 71px;
+    bottom: 155px;
+    width: 36px;
+    border-radius: 10px;
+}
+
+.super{
+  position: relative;
+  left: 692px;
+    width: 200px;
+    animation-duration: 1s;
+    animation: MoveBeat2 .8s, hidee 4s;
+    opacity: 0;
+    bottom: 843px;
+    z-index: 1000;
+}
+
+.mega{
+  position: relative;
+  left: 692px;
+    width: 200px;
+    animation-duration: 1s;
+    animation: MoveBeat2 .8s, hidee 4s;
+    opacity: 0;
+    bottom: 843px;
+    z-index: 1000;
+  }
+
+@keyframes MoveBeat2{
+  from{
+    width: 250px;
+    opacity: 1;
+  }
+
+  to{
+    width: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes hidee {
+  from{
+    animation-duration: 1s;
+    opacity: 1;
+  }
+
+  to{
+    opacity: 0;
+  }
+}
+
+.feedback-label{
+  position: fixed;
+  background: url(/img/frames.png) no-repeat;
+  background-size: 100%;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  opacity: 0;
+  animation: pulse 1.3s infinite;
+  width: 80px;
+  height: 80px;
+  top: 46px;
+  left: 757px;
+}
+
+
+.starperfect1{
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: starperfect1 1.3s infinite;
+    left: 837px;
+    top: 55px;
+    background: url(/img/frames-2.png) no-repeat;
+    background-size: 110%;
+    width: 51px;
+    height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect1 {
+ from{
+  left: 837px;
+    top: 55px;
+   transform: rotate(-45deg);
+   opacity: 1;
+ }
+ to{
+  left: 847px;
+  top: 75px;
+  opacity: 0;
+   transform: rotate(45deg);
+ }
+}
+
+.starperfect2{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect2 1.3s infinite;
+  left: 794px;
+  top: 59px;
+  background: url(/img/frames-2.png) no-repeat;
+  background-size: 110%;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect2 {
+from{
+  top: 59px;
+ transform: rotate(-45deg);
+ opacity: 1;
+}
+to{
+top: 75px;
+ transform: rotate(45deg);
+ opacity: 0;
+}
+}
+
+.starperfect3{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect3 1.3s infinite;
+  left: 745px;
+    top: 63px;background: url(/img/frames-2.png) no-repeat;
+    background-size: 110%;
+    width: 51px;
+    height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect3 {
+from{
+  left: 745px;
+  top: 59px;
+ transform: rotate(-45deg);
+ opacity: 1;
+}
+to{
+  left: 735px;
+top: 75px;
+ transform: rotate(45deg);
+ opacity: 0;
+}
+}
+
+.starperfect4{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect4 1.3s infinite;
+  left: 696px;
+  top: 55px;
+  background: url(/img/frames-2.png) no-repeat;
+  background-size: 110%;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect4 {
+from{
+  left: 696px;
+  top: 55px;
+ transform: rotate(-45deg);
+ opacity: 1;
+}
+to{
+  left: 686px;
+  top: 75px;
+ transform: rotate(45deg);
+ opacity: 0;
+}
+}
+
+.starperfect5{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect5 1.3s infinite;
+  left: 719px;
+  top: 15px;background: url(/img/frames-2.png) no-repeat;
+  background-size: 110%;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect5 {
+from{
+  left: 719px;
+    top: 15px;
+ transform: rotate(45deg);
+ opacity: 1;
+}
+to{
+  left: 709px;
+    top: 5px;
+ transform: rotate(-45deg);
+ opacity: 0;
+}
+}
+
+.starperfect6{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect6 1.3s infinite;
+  left: 766px;
+  top: 22px;background: url(/img/frames-2.png) no-repeat;
+  background-size: 110%;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect6 {
+from{
+  top: 22px;
+ transform: rotate(-45deg);
+ opacity: 1;
+}
+to{
+  top: 0px;
+ transform: rotate(45deg);
+ opacity: 0;
+}
+}
+
+.starperfect7{
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: starperfect7 1.3s infinite;
+  left: 812px;
+  top: 15px;background: url(/img/frames-2.png) no-repeat;
+  background-size: 110%;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes starperfect7 {
+from{
+      left: 812px;
+    top: 15px;
+ transform: rotate(-45deg);
+ opacity: 1;
+}
+to{
+      left: 824px;
+    top: 0px;
+ transform: rotate(45deg);
+ opacity: 0;
+}
+}
+
+
+.window{
+  position: relative;
+  width: 300px;
+  left: 650px;
+  top: 25px;
+  pointer-events: none;
+  visibility: visible;
+  background: url(/img/end_score.png) no-repeat;
+  background-size: 100%;
+  height: 338px;
+  animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: windows 2s;
+}
+
+@keyframes windows{
+  from{
+    left: 750px;
+    opacity: 0;
+  }
+  to{
+    left: 650px;
+    opacity: 1;
+  }
+}
+
+@keyframes ava{
+  from{
+    left: 750px;
+    opacity: 0;
+  }
+  to{
+    left: 715px;
+    opacity: 1;
+  }
+}
+
+.avatar-end{
+  width: 169px;
+  position: relative;
+  z-index: 1;
+  background: url(/img/31.png) no-repeat;
+  height: 169px;
+  background-size: 100%;
+  pointer-events: none;
+  top: 242px;
+  left: 715px;
+  visibility: visible;
+  animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: ava 2s;
+}
+
+.congr{
+  background-color: #adff2f;
+    height: 67px;
+    position: relative;
+    bottom: 14px;
+    border-radius: 15px;
+    width: 559px;
+    right: 15px;
+    visibility: visible;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: congr 2s;
+}
+.cong_text{
+  font-size: 45px;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    width: 471px;
+    bottom: 3px;
+    left: 102px;
+    visibility: visible;
+}
+
+.score{
+  background-color: #adff2f;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border-radius: 32px;
+  left: 677px;
+  top: 473px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.star1-score{
+  background: url(/img/Star_glow.png) no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    visibility: visible;
+    left: 685px;
+    top: 430px;
+    z-index: 1;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: starscore 1s;
+}
+
+.star2-score{
+  background: url(/img/Star_glow.png) no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    visibility: visible;
+    left: 723px;
+    top: 380px;
+    z-index: 1;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: starscore 1s;
+}
+
+.star3-score{
+  background: url(/img/Star_glow.png) no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    visibility: visible;
+    left: 762px;
+    top: 330px;
+    z-index: 1;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: starscore 1s;
+}
+
+.star4-score{
+  background: url(/img/Star_glow.png) no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    visibility: visible;
+    left: 802px;
+    top: 280px;
+    z-index: 1;
+}
+
+.star5-score{
+  background: url(/img/Star_glow.png) no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    visibility: visible;
+    left: 844px;
+    top: 230px;
+    z-index: 1;
+    animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: starscore 1s;
+}
+
+.cont{
+  background-color: #10ff18;
+  border-radius: 15px;
+  position: relative;
+  width: 190px;
+  height: 50px;
+  visibility: visible;
+  left: 1310px;
+  top: 150px;
+}
+
+.co{
+  text-decoration: none;
+  position: relative;
+  top: 2px;
+  font-size: 29px;
+  left: 20px;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@keyframes starscore{
+  from{
+    transform: rotate(45deg);
+  }
+  to{
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes congr{
+  from{
+    right: 560px;
+  }
+  to{
+    right: 15px;
+  }
+}
+
+.pict1{
+  background: url(/newworldalt/1.png)no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  visibility: visible;
+  animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: pictos 4s;
+    opacity: 0;
+    left: 1356px;
+    top: 590px;
+}
+
+.pict2{
+  background: url(/newworldalt/2.png)no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  visibility: visible;
+  animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: pictos 4.5s;
+    opacity: 0;
+    z-index: 11;
+    left: 1356px;
+    top: 590px;
+}
+
+.pict3{
+  background: url(/newworldalt_pictos/3.png)no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  visibility: visible;
+  animation-delay:9s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: pictos 5s;
+    opacity: 0;
+    z-index: 11;
+    left: 1356px;
+    top: 590px;
+}
+
+@keyframes pictos {
+  0%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  } 
+  60%{
+    left: 1095px;
+    top: 590px;
+    opacity: 1;
+  }
+  100%{
+    left: 1095px;
+    top: 570px;
+    opacity: 0;
+  }
+}
+
+.load{
+  visibility: visible;
+  position: relative;
+    left: 1430px;
+    top: 733px;
+    animation-name: rotation;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+
+.loa{
+  color: aquamarine;
+  width: 250px;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  left: 1150px;
+  top: 745px;
+}
+
+.song-rythz-orig{
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+  left: 286px;
+  bottom: 270px;
+}
+
+.category-news{
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  top: 128px;
+  left: 21px;
+  width: 205px;
+  background: rgb(144, 146, 142);
+}

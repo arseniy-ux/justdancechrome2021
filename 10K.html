@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-10.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>10K</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: HelveticaNeueLTW1G-Md;
+    src: url(/HelveticaNeueLTW1G-BdCn.ttf); /* Путь к файлу со шрифтом */
+   }
+</style>
+<script>
+    let stars = 0;
+
+    var roomNumber = 2534;
+
+    var joinedPlayers = 0;
+
+    var ende = 0;
+
+    function star1s() {
+        var audios = new Audio(); // Создаём новый элемент Audio
+	        audios.src = '/audio/star1.mp3'; // Указываем путь к звуку "клика"
+            audios.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star2s() {
+        var audios2 = new Audio(); // Создаём новый элемент Audio
+	        audios2.src = '/audio/star2.mp3'; // Указываем путь к звуку "клика"
+            audios2.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star3s() {
+        var audios3 = new Audio(); // Создаём новый элемент Audio
+	        audios3.src = '/audio/star3.mp3'; // Указываем путь к звуку "клика"
+            audios3.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star4s() {
+        var audios4 = new Audio(); // Создаём новый элемент Audio
+	        audios4.src = '/audio/star4.mp3'; // Указываем путь к звуку "клика"
+            audios4.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star5s() {
+        var audios5 = new Audio(); // Создаём новый элемент Audio
+	        audios5.src = '/audio/star5.mp3'; // Указываем путь к звуку "клика"
+            audios5.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star6s() {
+        var audios6 = new Audio(); // Создаём новый элемент Audio
+	        audios6.src = '/audio/star_super.mp3'; // Указываем путь к звуку "клика"
+            audios6.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+function star7s() {
+        var audios7 = new Audio(); // Создаём новый элемент Audio
+	        audios7.src = '/audio/star_mega.mp3'; // Указываем путь к звуку "клика"
+            audios7.autoplay = true; // Автоматически запускаем
+            $('#background_bar').height(function (index, height) {return (height + 2)})
+}
+
+</script>
+<body id="body" class="body">
+    <div style="width: 0;height: 0;"><a href="news-menu.html"><div style="z-index: 100;" id="categorynew" class="category-news"></div></div></a></div>  
+
+    <div style="height: 0;width: 0;" class="transition" id="transition">
+        
+    <img id="trans-logo" class="none" src="/img/transition_elements/Logo.png" alt="">
+    </div>
+
+    <div class="menu">
+        <div style="box-shadow: -1px 1px 9px 5px #10ff18;" id="category" class="category-song"></div>
+        <div style="box-shadow: -1px 1px 9px 5px #545a54;" id="avatars-block" class="avatars-box">
+            <div>
+                <div onclick="randomavarat()" style=" pointer-events: none; " id="avatar" class="avatar" alt=""></div>
+                <div id="level" class="level">
+                    <h2 style="font-family: 'Noto Sans JP', sans-serif;position: relative;left: 18px;width: 0px;top: 5px">1</h2>
+                </div>
+                <div id="to-level" class="to-level"></div>
+                <div >
+                    <img style=" pointer-events: none; "  id="country" class="country" src="/img/hotpng.com.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="pebn" class="pebn">
+            <h1 style="font-family: 'Noto Sans JP', sans-serif;position: relative;bottom: 48px;color: #8ed028;">Just Dance 2021</h1>
+        </div>
+        <div id="catalog" style="height: 0;" class="catalog">
+            <div style="box-shadow: -1px 1px 9px 5px #10ff18;" id="selector"  class="selector"></div>
+            <div style="width: 0;height: 0;" >
+               
+               <a href="RainbowRhythm.html"><div style="width: 0;height: 0;"><img id="song-2" class="song-rythz-orig" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FRainbowRhythm_logo.png?v=1597782756711" alt=""></div></a>
+               <div style="width: 0;height: 0;"><img id="song-2" class="song-la-respuesta" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FLarespuesta_logo.png?v=1597835567698" alt=""></div>
+               <a href="DontCallMeUp.html"><div style="width: 0;height: 0;"><img id="song-2" class="song-dont-call" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FDontcall_logo.png?v=1597945431365" alt=""></div></a>
+               <a href="/ILoveIt.html"><div style="width: 0;height: 0;"><img id="song-2" class="song-i-love-it" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FIloveit_cover_generic.png?v=1598192810190" alt=""></div></a>
+            </div>
+                <div style="box-shadow: -1px 1px 9px 5px #10ff18;" class="name-of-song">
+                <h2 style="font-family: 'Noto Sans JP', sans-serif;position: relative;left: 5px;color: #fff;animation: razt 1s ;">The Greatest</h2>
+                <h4 style="font-family: 'Noto Sans JP', sans-serif;position: relative;position: relative;left: 8px;color: #fff;animation: razt 1s ;">Sia</h4>
+                </div>
+                <div>
+                    <video  autoplay loop id="autoplay" class="autoplay" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2Fy2mate.com%20-%20Just%20Dance%20Unlimited%20-%20The%20Greatest%20(No%20Hud%2075fps)_p0Xd2rzHdtc_720p%20(online-video-cutter.com).mp4?v=1598533543941"></video>
+                </div>
+                <audio style="width: 0;height: 0;"><source src="/audio/select_btn.mp3" type="audio/mpeg"></audio><img onclick="select() , selectneworld(),  this.previousSibling.play()" style="position: relative;border-radius: 39px;;bottom: 533px;left: 829px;animation: raztb 1s;box-shadow: -1px 1px 9px 5px #10ff18;border-radius: 39px;" src="/img/btn_dance.png" alt="">
+            </div>
+    </div>
+    <script>
+    
+        
+
+ function randomavarat(){
+     var list = ['avatar-1', 'avatar-2', 'avatar-3'];
+   document.getElementById('avatar').className = list[ Math.floor( Math.random() * list.length ) ];
+ }
+
+ var list = ['avatar-1', 'avatar-2', 'avatar-3'];
+   document.getElementById('avatar').className = list[ Math.floor( Math.random() * list.length ) ];
+
+   document.onkeydown = function(e){
+  e = e || window.event;
+  if(e.keyCode === 38) {
+    document.location.href = "index.html";
+  }
+}
+
+
+
+
+        /*                          // это анимация передвижения квадратика выбора песни
+        var left = 267;
+  
+      
+        window.onkeydown = function move_left(){
+        
+            if(event.keyCode==37){
+        
+                left=left-200;
+       
+                document.getElementById('selector').style.left = left + 'px';
+        
+            }
+       
+                else if(event.keyCode==39){
+      
+                    left=left+200;
+        
+                    document.getElementById('selector').style.left= left + 'px';
+        
+                }
+        
+         
+        
+        };*/
+
+        function select(){
+            var cat = $('#category');
+            console.log(cat.attr('class'));
+            cat.attr('class', 'hide');
+            cat.removeAttr('category-song');
+
+            var catn = $('#categorynew');
+            console.log(catn.attr('class'));
+            catn.attr('class', 'none');
+            catn.removeAttr('category-news');
+
+            var avblock = $('#avatars-block');
+            console.log(avblock.attr('class'));
+            avblock.attr('class', 'hide');
+            avblock.removeAttr('avatars-block');
+
+            var av = $('#avatar');
+            console.log(av.attr('class'));
+            av.attr('class', 'hide');
+            av.removeAttr('avatar');
+
+            var lv = $('#level');
+            console.log(lv.attr('class'));
+            lv.attr('class', 'hide');
+            lv.removeAttr('level');
+
+            var to = $('#to-level');
+            console.log(to.attr('class'));
+            to.attr('class', 'hide');
+            to.removeAttr('to-level');
+
+            var co = $('#country');
+            console.log(co.attr('class'));
+            co.attr('class', 'hide');
+            co.removeAttr('country');
+
+            var to = $('#pebn');
+            console.log(to.attr('class'));
+            to.attr('class', 'hide');
+            to.removeAttr('pebn');
+
+            var cot = $('#catalog');
+            console.log(cot.attr('class'));
+            cot.attr('class', 'hide');
+            cot.removeAttr('catalog');
+
+            var popup = new Audio('/audio/splashscreen_enter.mp3');
+    popup.play()
+        }
+        
+
+        function selectneworld(){
+            var al = $('#album');
+            console.log(al.attr('class'));
+            al.attr('class', 'album');
+            al.removeAttr('album-no');
+            var bo = $('#body');
+            console.log(bo.attr('class'));
+            bo.attr('class', 'body-2');
+            bo.removeAttr('body');
+            var lo = $('#load');
+            console.log(lo.attr('class'));
+            lo.attr('class', 'load');
+            lo.removeAttr('none');
+            var lod = $('#loa');
+            console.log(lod.attr('class'));
+            lod.attr('class', 'loa');
+            lod.removeAttr('none');
+            setTimeout(show, 4200);
+            setTimeout(showbutton, 6600);
+        }
+        </script>
+        
+    <div class="ingame">
+        <img class="gold_none" src="/img/YeahParticle.png" alt="">
+        <div class="line">
+            <h1 id="nickname" class="nickname_false">Happy</h1>
+            <img id="line" class="line_player_false" src="/img/line.png" alt="">
+            <div id="feed-element-2" class="feed-element-none"></div>
+            <div id="feed-element-3" class="feed-element-none"></div>
+            <div id="feedback" class="feedback-none feedback"></div>
+            <div id="feedbacky" class="feedback-none"></div>
+           <div id="feedbackyl" class="feedback-none"></div>
+            <div id="feedback-label" class="none"></div>
+            <div style="width: 0;height: 0;"><div id="starperfect1" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect2" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect3" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect4" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect5" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect6" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="starperfect7" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="good-ball-1" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="good-ball-2" class="none"></div></div>
+            <div style="width: 0;height: 0;"><div id="good-ball-3" class="none"></div></div>
+            <div style="width: 0;height: 0;">
+                <div id="pictos" class="none"></div>
+                <img id="beat" class="none" src="/img/Pictobar.png" alt="">
+            </div>
+            <div style="width: 0;height: 0;"><div id="gold_move" class="none"></div></div>
+            
+        </div>
+        <div style="height: 0;">
+            <div>
+                <img id="starbar"  class="starbar_play_false" src="/img/ractrack.png" alt="">
+                <div id="background_bar" class="background_bar"></div>
+            </div>
+            
+            <div id="star1" class="none"></div>
+            <div id="star2" class="none"></div>
+            <div id="star3" class="none"></div>
+            <div id="star4" class="none"></div>
+            <div id="star5" class="none"></div>
+            <div style="width: 0;height: 0;"> <img id="supertext" class="none" src="/img/superstar_text.png" alt=""></div>
+           <div style="width: 0;height: 0;"><img id="megatext" class="none" src="/img/megastar_text.png" alt=""></div>
+            
+        </div>
+        <audio id="audioPlay" src="/audio/hud_goldmove_explo.mp3"></audio>
+       
+        
+        <video onended=" end(),transitionEnd()" style="outline: hidden;" id="songPlay" class="inGame-no" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2Fy2mate.com%20-%20Just%20Dance%20Unlimited%20-%20The%20Greatest%20(No%20Hud%2075fps)_p0Xd2rzHdtc_720p.mp4?v=1598533399260"></video>
+        
+    </div>
+    <audio src="/audio/NewWorld (online-audio-converter.com).mp3"></audio>
+    <div style="height: 0;width: 0;" class="all_menu_album">
+        <div class="album_coach" style="overflow: hidden">
+            
+            <img id="album" class="album-no" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FTheGreatest_Cover_AlbumCoach.png?v=1598533637384" alt="">
+        </div>
+    <div style="height: 0;" class="select_coach_1">
+        </div>
+        <img id="coach" class="select" src="https://cdn.glitch.com/a6a0bbaf-03fe-4ef4-8220-71abe8276eeb%2FTheGreatest_Coach_1.png?v=1598533645164" alt="">
+        
+    </div>
+    <div id="bak" style="height: 0;width: 0;">
+    <a style="text-decoration: none;" href=""><div  id="back_btn" class="none"><h2 id="back-h2" class="back-h2" >Back</h2></div></a>
+    </div>
+    <audio><source src="/audio/transition_1.mp3" type="audio/mpeg"></audio><img id="dance-btn" class="dance-hide"  onclick="transition() , this.previousSibling.play()" src="/img/btn_dance.png" alt="">
+        <div style="width: 0;height: 0;">
+            <div style="width: 0;height: 0;"><h2 id="loa" class="none">Loading. Please wait...</h2></div>
+            
+        <img id="load" class="none" src="/img/load.png" alt=""></div>
+        </div>
+    </div>
+
+<div style="width: 0;height: 0;">
+    <div id="endScreen" class="none">
+        <div id="congr" class="none">
+            <h1 id="cong_text" class="cong_text"></h1>
+        </div>
+        <div style="width: 0;height: 0;" >
+            <div style="width: 0;height: 0;"><div id="score" class="none"></div></div>
+            <div style="width: 0;height: 0;">
+            <div id="star1-score" class="none"></div>
+            <div id="star2-score" class="none"></div>
+            <div id="star3-score" class="none"></div>
+            <div id="star4-score" class="none"></div>
+            <div id="star5-score" class="none"></div>
+            </div>
+            <div id="avatar-end" class="none"></div>
+            <div id="window" class="none"></div>
+            <div style="width: 0;height: 0;"><div onclick="window.reload()" id="cont" class="none"><a id="co" class="none" href=""></a></div></div>
+            
+        </div>
+    </div>
+</div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script>
+        function end(){
+    var feedn = $('#feedback');
+    console.log(feedn.attr('class'));
+    feedn.removeAttr('class', 'feedback-bad', 'feedback-ok', 'feedback-good', 'feedback-super', 'feedback-perfect');
+    feedn.attr('class', 'feedback-none');
+      
+
+
+    var bar = $('#starbar');
+    console.log(bar.attr('class'));
+    bar.attr('class', 'starbar_play_false');
+    bar.removeAttr('starbar_play_true');
+    bar.attr('class', 'starbar_play_false')
+
+    var body = $('#body');
+console.log(body.attr('class'));
+body.attr('class', 'body-transition');
+body.removeAttr('body-song');
+
+var s = $('#songPlay');
+console.log(s.attr('class'));
+s.attr('class', 'inGame-no');
+s.removeAttr('inGame-yes');
+
+var star1 = $('#star1');
+console.log(body.attr('class'));
+body.attr('class', 'none');
+body.removeAttr('star1-und');
+
+var nick = $('#nickname');
+console.log(nick.attr('class'));
+nick.attr('class', 'none');
+nick.removeAttr('nickname');
+
+var line = $('#line');
+console.log(line.attr('class'));
+line.attr('class', 'none');
+line.removeAttr('line_player_true');
+
+var congr = $('#congr');
+console.log(congr.attr('class'));
+congr.attr('class', 'congr');
+congr.removeAttr('none');
+
+var congt = $('#cong_text');
+console.log(congt.attr('class'));
+congt.attr('class', 'cong_text');
+congt.removeAttr('none');
+
+var avatarend = $('#avatar-end');
+console.log(avatarend.attr('class'));
+avatarend.attr('class', 'avatar-end');
+avatarend.removeAttr('none');
+
+var co = $('#co');
+console.log(co.attr('class'));
+co.attr('class', 'co');
+co.removeAttr('none');
+
+var cont = $('#cont');
+console.log(co.attr('class'));
+cont.attr('class', 'cont');
+cont.removeAttr('none');
+
+var congrd = 'CONGRATULATIONS!';
+  document.getElementById('cong_text').innerHTML = congrd;
+
+  var con = 'CONTINUE';
+  document.getElementById('co').innerHTML = con;
+
+if(stars == 1){
+    var star1s = $('#star1-score');
+console.log(star1s.attr('class'));
+star1s.attr('class', 'star1-score');
+star1s.removeAttr('none');
+} else if (stars == 2){
+    var star1s = $('#star1-score');
+console.log(star1s.attr('class'));
+star1s.attr('class', 'star1-score');
+star1s.removeAttr('none');
+    var star2s = $('#star2-score');
+console.log(star2s.attr('class'));
+star2s.attr('class', 'star2-score');
+star2s.removeAttr('none');
+} else if (stars == 3){
+    var star1s = $('#star1-score');
+console.log(star1s.attr('class'));
+star1s.attr('class', 'star1-score');
+star1s.removeAttr('none');
+    var star2s = $('#star2-score');
+console.log(star2s.attr('class'));
+star2s.attr('class', 'star2-score');
+star2s.removeAttr('none');
+    var star3s = $('#star3-score');
+console.log(star3s.attr('class'));
+star3s.attr('class', 'star3-score');
+star3s.removeAttr('none');
+} else if (stars == 4){
+    var star1s = $('#star1-score');
+console.log(star1s.attr('class'));
+star1s.attr('class', 'star1-score');
+star1s.removeAttr('none');
+    var star2s = $('#star2-score');
+console.log(star2s.attr('class'));
+star2s.attr('class', 'star2-score');
+star2s.removeAttr('none');
+    var star3s = $('#star3-score');
+console.log(star3s.attr('class'));
+star3s.attr('class', 'star3-score');
+star3s.removeAttr('none');
+    var star4s = $('#star4-score');
+console.log(star4s.attr('class'));
+star4s.attr('class', 'star4-score');
+star4s.removeAttr('none');
+} else if(stars == 5){
+    var star1s = $('#star1-score');
+console.log(star1s.attr('class'));
+star1s.attr('class', 'star1-score');
+star1s.removeAttr('none');
+    var star2s = $('#star2-score');
+console.log(star2s.attr('class'));
+star2s.attr('class', 'star2-score');
+star2s.removeAttr('none');
+    var star3s = $('#star3-score');
+console.log(star3s.attr('class'));
+star3s.attr('class', 'star3-score');
+star3s.removeAttr('none');
+    var star4s = $('#star4-score');
+console.log(star4s.attr('class'));
+star4s.attr('class', 'star4-score');
+star4s.removeAttr('none');
+    var star5s = $('#star5-score');
+console.log(star5s.attr('class'));
+star5s.attr('class', 'star5-score');
+star5s.removeAttr('none');
+} else if(stars == 6){
+    star6s()
+} else if(stars == 7){
+    star7s()
+}
+        }
+
+        function transitionEnd(){
+            var windoww = $('#window');
+console.log(windoww.attr('class'));
+windoww.attr('class', 'window');
+windoww.removeAttr('none');
+
+var score = $('#score');
+console.log(score.attr('class'));
+score.attr('class', 'score');
+score.removeAttr('none');
+
+            var tran = $('#trans-logo');
+    console.log(tran.attr('class'));
+    tran.attr('class', 'none');
+    tran.removeAttr('logo');
+    var fd = document.getElementById('feedback');
+fd.remove();
+
+var bar = document.getElementById('background_bar');
+bar.remove();
+var gd = document.getElementById('gold_move');
+gd.remove();
+
+            var ende = 1;
+            
+            var tran = $('#trans-logo');
+    console.log(tran.attr('class'));
+    tran.attr('class', 'logo');
+    tran.removeAttr('none');
+
+    var beat = $('#beat');
+    console.log(beat.attr('class'));
+    beat.attr('class', 'none');
+    beat.removeAttr('beat');
+
+    var pic = $('#pictos');
+    console.log(pic.attr('class'));
+    pic.attr('class', 'none');
+    pic.removeAttr('pictos');
+
+    var bar = $('#starbar');
+    console.log(bar.attr('class'));
+    bar.attr('class', 'starbar_play_false');
+    bar.removeAttr('starbar_play_true');
+    bar.attr('class', 'starbar_play_false')
+
+    var body = $('#body');
+console.log(body.attr('class'));
+body.attr('class', 'none');
+body.removeAttr('body-song');
+
+var a = $('#songPlay');
+console.log(a.attr('class'));
+a.attr('class', 'inGame-no');
+a.removeAttr('inGame-yes');
+
+var star1 = $('#star1');
+console.log(star1.attr('class'));
+star1.attr('class', 'none');
+star1.removeAttr('star1-und', 'star2-und', 'star3-und', 'star4-und','star5-und', 'star1-super', 'star2-super', 'star3-super', 'star4-super','star5-super', 'star1-mega', 'star2-mega', 'star3-mega', 'star4-mega','star5-mega');
+
+var star2 = $('#star2');
+console.log(star2.attr('class'));
+star2.attr('class', 'none');
+star2.removeAttr('star1-und', 'star2-und', 'star3-und', 'star4-und','star5-und', 'star1-super', 'star2-super', 'star3-super', 'star4-super','star5-super', 'star1-mega', 'star2-mega', 'star3-mega', 'star4-mega','star5-mega');
+
+var star3 = $('#star3');
+console.log(star3.attr('class'));
+star3.attr('class', 'none');
+star3.removeAttr('star1-und', 'star2-und', 'star3-und', 'star4-und','star5-und', 'star1-super', 'star2-super', 'star3-super', 'star4-super','star5-super', 'star1-mega', 'star2-mega', 'star3-mega', 'star4-mega','star5-mega');
+
+var star4 = $('#star4');
+console.log(star4.attr('class'));
+star4.attr('class', 'none');
+star4.removeAttr('star1-und', 'star2-und', 'star3-und', 'star4-und','star5-und', 'star1-super', 'star2-super', 'star3-super', 'star4-super','star5-super', 'star1-mega', 'star2-mega', 'star3-mega', 'star4-mega','star5-mega');
+
+var star = $('#star5');
+console.log(star5.attr('class'));
+star5.attr('class', 'none');
+star5.removeAttr('star1-und', 'star2-und', 'star3-und', 'star4-und','star5-und', 'star1-super', 'star2-super', 'star3-super', 'star4-super','star5-super', 'star1-mega', 'star2-mega', 'star3-mega', 'star4-mega','star5-mega');
+
+var nick = $('#nickname');
+console.log(nick.attr('class'));
+nick.attr('class', 'none');
+nick.removeAttr('nickname_true');
+
+var linea = $('#line');
+console.log(linea.attr('class'));
+linea.attr('class', 'none');
+linea.removeAttr('line_player_true');
+
+var congr = $('#congr');
+console.log(congr.attr('class'));
+congr.attr('class', 'congr');
+congr.removeAttr('none');
+        }
+
+function show() {
+var logo = $('#coach');
+console.log(logo.attr('class'));
+logo.attr('class', 'select-2');
+logo.removeAttr('select');
+logo.attr('class', 'select-2');
+
+var logoo = $('#coach2');
+console.log(logoo.attr('class'));
+logoo.attr('class', 'select-4');
+logoo.removeAttr('none');
+logoo.attr('class', 'select-4');
+
+var body = $('#body');
+console.log(body.attr('class'));
+body.attr('class', 'body-3');
+body.removeAttr('body-2');
+body.attr('class', 'body-3');
+}
+
+
+</script>
+
+<script>
+function showbutton() {
+    var lo = $('#load');
+console.log(lo.attr('class'));
+lo.attr('class', 'none');
+lo.removeAttr('load');
+var lod = $('#loa');
+console.log(lod.attr('class'));
+lod.attr('class', 'none');
+lod.removeAttr('loa');
+var dance = $('#dance-btn');
+console.log(dance.attr('class'));
+dance.attr('class', 'dance-button');
+dance.removeAttr('dance-hide');
+dance.attr('class', 'dance-button');
+var loo = document.getElementById('loa');
+loo.remove();
+var back = $('#back_btn');
+console.log(back.attr('class'));
+back.attr('class', 'back_btn');
+back.removeAttr('none');
+}
+
+
+</script>
+
+<script>
+    var video;
+    var display;
+
+window.onload = function() {
+	video = document.getElementById("songPlay");
+};
+
+function transition(){
+    var viad = document.getElementById("autoplay");
+            viad.volume = 0.0;
+    var tran = $('#trans-logo');
+    console.log(tran.attr('class'));
+    tran.attr('class', 'logo');
+    tran.removeAttr('none');
+
+    document.getElementById("dance-btn").remove();
+    document.getElementById("bak").remove();
+
+    var dance = $('#dance-btn');
+    console.log(dance.attr('class'));
+    dance.attr('class', 'dance-hide');
+    dance.removeAttr('dance-button');
+    dance.attr('class', 'dance-hide');
+    var body = $('#body');
+    console.log(body.attr('class'));
+    body.attr('class', 'body-transition');
+    body.removeAttr('body-2');
+    var logo = $('#coach');
+    console.log(logo.attr('class'));
+    logo.attr('class', 'select-none');
+    logo.removeAttr('select-2');
+    logo.attr('class', 'select-none');
+
+    var logoo = $('#coach2');
+    console.log(logoo.attr('class'));
+    logoo.attr('class', 'select-none');
+    logoo.removeAttr('select-4');
+    logoo.attr('class', 'select-none');
+
+    var song = $('#songPlay');
+    console.log(song.attr('class'));
+    song.attr('class', 'inGame-yes');
+    song.removeAttr('inGame-no');
+    song.attr('class', 'inGame-yes');
+    var album = $('#album');
+    console.log(album.attr('class'));
+    album.attr('class', 'album-no');
+    album.removeAttr('album');
+    album.attr('class', 'album-no');
+    setInterval(plays(), 2000)
+    setInterval(playsong(), 1000)
+    setInterval(plau(), 1000)
+    setInterval(plaur(), 1000)
+star(document.querySelector('#ba1r'))
+
+
+
+    
+    
+}
+
+function plays() {
+
+    var viad = document.getElementById("autoplay");
+            viad.volume = 0.0;
+    var backh2 = $('#back-h2');
+    console.log(backh2.attr('class'));
+    backh2.attr('class', 'none');
+    backh2.removeAttr('back-h2');
+    var star1 = $('#star1');
+        console.log(star1.attr('class'));
+        star1.removeAttr('class', 'none');
+        star1.attr('class', 'star1-und');
+    var beat = $('#beat');
+    console.log(beat.attr('class'));
+    beat.attr('class', 'beat');
+    beat.removeAttr('none');
+    var pict = $('#pictos');
+    console.log(pict.attr('class'));
+    pict.attr('class', 'pictos');
+    pict.removeAttr('none');
+    var back = $('#back_btn');
+    console.log(back.attr('class'));
+    back.attr('class', 'none');
+    back.removeAttr('back_btn');
+    setInterval(video.play() ,2000)
+    var body = $('#body');
+    console.log(body.attr('class'));
+    body.attr('class', 'body-song');
+    body.removeAttr('body-transition');
+    body.attr('class', 'body-song');
+    var line = $('#line');
+    console.log(line.attr('class'));
+    line.attr('class', 'line_player_true');
+    line.removeAttr('line_player_false');
+    line.attr('class', 'line_player_true');
+    var nickname = $('#nickname');
+    console.log(nickname.attr('class'));
+    nickname.attr('class', 'nickname_true');
+    nickname.removeAttr('nickname_false');
+    nickname.attr('class', 'nickname_true');
+    var bar = $('#starbar');
+    console.log(bar.attr('class'));
+    bar.attr('class', 'starbar_play_true');
+    bar.removeAttr('starbar_play_false');
+    bar.attr('class', 'starbar_play_true');
+    var star = $('#star1');
+    console.log(star.attr('class'));
+    star.attr('class', 'star1-und');
+    star.removeAttr('none');
+
+}
+</script>
+
+<audio id="audio_star" style="width: 0;height: 0;" src="/audio/star.mp3"></audio>
+
+<script>
+    function playsong(){ setInterval(goldmove, 88169)
+        setInterval(goldmove, 90836)
+        setInterval(goldmove, 179174)
+;
+
+function bar(bar) {
+    
+	setInterval(function() {
+        
+        if(document.querySelector(".background_bar").style.height == 84 + "px" || document.querySelector(".background_bar").style.height == 86 + "px"  || document.querySelector(".background_bar").style.height == 88 + "px"){
+            var star1 = $('#star1');
+        console.log(star1.attr('class'));
+        star1.removeAttr('class', 'star1-und');
+        star1.attr('class', 'star1-yes');
+        var star2 = $('#star2');
+        console.log(star2.attr('class'));
+        star2.removeAttr('class', 'none');
+        star2.attr('class', 'star2-und');
+        star1s()
+        stars = 1;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  164 + "px"  || document.querySelector(".background_bar").style.height == 166 + "px"  || document.querySelector(".background_bar").style.height == 168 + "px"){
+        var star2 = $('#star2');
+        console.log(star2.attr('class'));
+        star2.removeAttr('class', 'star2-und');
+        star2.attr('class', 'star2-yes');
+        var star3 = $('#star3');
+        console.log(star3.attr('class'));
+        star3.removeAttr('class', 'none');
+        star3.attr('class', 'star3-und');
+        star2s()
+        stars = 2;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  232 + "px"  || document.querySelector(".background_bar").style.height == 234 + "px"  || document.querySelector(".background_bar").style.height == 236 + "px"){
+        var star3 = $('#star3');
+        console.log(star3.attr('class'));
+        star3.removeAttr('class', 'star3-und');
+        star3.attr('class', 'star3-yes');
+        var star4 = $('#star4');
+        console.log(star4.attr('class'));
+        star4.removeAttr('class', 'none');
+        star4.attr('class', 'star4-und');
+        star3s()
+        stars = 3;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  308 + "px"  || document.querySelector(".background_bar").style.height == 310 + "px"  || document.querySelector(".background_bar").style.height == 312 + "px"){
+        var star4 = $('#star4');
+        console.log(star4.attr('class'));
+        star4.removeAttr('class', 'star4-und');
+        star4.attr('class', 'star4-yes');
+        var star5 = $('#star5');
+        console.log(star4.attr('class'));
+        star5.removeAttr('class', 'none');
+        star5.attr('class', 'star5-und');
+        star4s()
+        stars = 4;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  376 + "px"  || document.querySelector(".background_bar").style.height == 378 + "px"  || document.querySelector(".background_bar").style.height == 380 + "px"){
+        var star5 = $('#star5');
+        console.log(star5.attr('class'));
+        star5.removeAttr('class', 'star5-und');
+        star5.attr('class', 'star5-yes');
+        star5s()
+        stars = 5;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  440 + "px"  || document.querySelector(".background_bar").style.height == 442 + "px"  || document.querySelector(".background_bar").style.height == 444 + "px"){
+        var star1 = $('#star1');
+        console.log(star1.attr('class'));
+        star1.removeAttr('class', 'star1-yes');
+        star1.attr('class',  'star1-super');
+
+        var star2 = $('#star2');
+        console.log(star2.attr('class'));
+        star2.removeAttr('class', 'star2-yes');
+        star2.attr('class',  'star2-super');
+
+        var star3 = $('#star3');
+        console.log(star3.attr('class'));
+        star3.removeAttr('class', 'star3-yes');
+        star3.attr('class',  'star3-super');
+
+        var star4 = $('#star4');
+        console.log(star4.attr('class'));
+        star4.removeAttr('class', 'star4-yes');
+        star4.attr('class', 'star4-super');
+
+        var star5 = $('#star5');
+        console.log(star5.attr('class'));
+        star5.removeAttr('class', 'star5-yes');
+        star5.attr('class',  'star5-super');
+
+        var superrr = $('#supertext');
+        console.log(superrr.attr('class'));
+        superrr.removeAttr('class', 'none');
+        superrr.attr('class',  'super');
+            star6s()
+        stars = 6;
+        }
+
+        if(document.querySelector(".background_bar").style.height  ==  488 + "px"  || document.querySelector(".background_bar").style.height == 490 + "px"  || document.querySelector(".background_bar").style.height == 492 + "px"){
+        var star1 = $('#star1');
+        console.log(star1.attr('class'));
+        star1.removeAttr('class', 'star1-super');
+        star1.attr('class',  'star1-mega');
+
+        var star2 = $('#star2');
+        console.log(star2.attr('class'));
+        star2.removeAttr('class', 'star2-super');
+        star2.attr('class',  'star2-mega');
+
+        var star3 = $('#star3');
+        console.log(star3.attr('class'));
+        star3.removeAttr('class', 'star3-super');
+        star3.attr('class',  'star3-mega');
+
+        var star4 = $('#star4');
+        console.log(star4.attr('class'));
+        star4.removeAttr('class', 'star4-super');
+        star4.attr('class', 'star4-mega');
+
+        var star5 = $('#star5');
+        console.log(star5.attr('class'));
+        star5.removeAttr('class', 'star5-super');
+        star5.attr('class',  'star5-mega');
+        
+        var mega = $('#megatext');
+        console.log(mega.attr('class'));
+        mega.removeAttr('class', 'none');
+        mega.attr('class',  'mega');
+        star7s()
+        stars = 7;
+        }
+        
+  }, 0);
+
+}
+
+bar(document.querySelector('#bar'))
+    }
+ /*   var feed_elm1 = $('#feed-element'); 
+    console.log(feed_elm1.attr('class'));
+    feed_elm1.removeAttr('feed-element-none');
+    feed_elm1.attr('class', 'feed-element');
+    var feed_elm2 = $('#feed-element-2');
+    console.log(feed_elm2.attr('class'));
+    feed_elm2.removeAttr('feed-element-none');
+    feed_elm2.attr('class', 'feed-element-2');
+    var feed_elm3 = $('#feed-element-3');
+    console.log(feed_elm3.attr('class'));
+    feed_elm3.removeAttr('feed-element-none');
+    feed_elm3.attr('class', 'feed-element-3');  */
+
+</script>
+
+<script>
+    
+    function plaur(){
+        setInterval( yeah, 198000 ); 
+    }
+
+   function plau() {
+        
+        setInterval( yeah, 148000 ); 
+        function gogo(wh) {
+	setInterval(function() {
+        if(ende == 0){
+var r = Math.floor( Math.random() * 10)
+
+      if( r == 1 || r == 6){
+            bad()
+        }
+
+        if( r == 2 || r == 7){
+            ok()
+        }
+
+        if( r == 3 || r == 8){
+            good()
+        }
+
+        if( r == 4 || r == 9){
+            supeR()
+        }
+
+        if( r == 5 || r == 10){
+            perfect()
+        }
+        } else {
+            var no = $('#feedback');
+        console.log(no.attr('class'));
+        no.removeAttr('class', 'feedback-bad','feedback-good', 'feedback-ok','feedback-super','feedback-perfect','feedback-yeah','feedback-goldBad' );
+        no.attr('class',  'feedback-none') 
+        }
+        
+
+  }, 1300);
+}
+
+    gogo(document.querySelector('#wh'))
+
+
+        
+    }
+
+    function bad(){
+        var bad = $('#feedback');
+        console.log(bad.attr('class'));
+        bad.removeAttr('class', 'feedback-none','feedback-ok', 'feedback-good','feedback-super','feedback-perfect','feedback-yeah','feedback-goldBad' );
+        bad.attr('class',  'feedback-bad') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+
+        var perfl1 = $('#starperfect1'); 
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'starperfect1');
+        perfl1.attr('class',  'none') 
+
+        var perfl2 = $('#starperfect2'); 
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'starperfect2');
+        perfl2.attr('class',  'none') 
+
+        var perfl3 = $('#starperfect3'); 
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'starperfect3');
+        perfl3.attr('class',  'none') 
+
+        var perfl4 = $('#starperfect4'); 
+        console.log(perfl2.attr('class'));
+        perfl4.removeAttr('class', 'starperfect4');
+        perfl4.attr('class',  'none') 
+
+        var perfl5 = $('#starperfect5'); 
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'starperfect5');
+        perfl5.attr('class',  'none') 
+
+        var perfl6 = $('#starperfect6'); 
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'starperfect6');
+        perfl6.attr('class',  'none') 
+
+        var perfl7 = $('#starperfect7'); 
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'starperfect7');
+        perfl7.attr('class',  'none') 
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbacky');
+        llp.attr('class',  'none')
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackys');
+        llp.attr('class',  'none')
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackyg');
+        llp.attr('class',  'none')
+        
+                    }
+
+    function ok(){
+        var ok = $('#feedback');
+        console.log(ok.attr('class'));
+        ok.removeAttr('class', 'feedback-bad','feedback-none', 'feedback-good','feedback-super','feedback-perfect','feedback-yeah','feedback-goldBad' );
+        ok.attr('class',  'feedback-ok') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+        $('#background_bar').height(function (index, height) {return (height + 2)})
+
+        var perfl1 = $('#starperfect1'); 
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'starperfect1');
+        perfl1.attr('class',  'none') 
+
+        var perfl2 = $('#starperfect2'); 
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'starperfect2');
+        perfl2.attr('class',  'none') 
+
+        var perfl3 = $('#starperfect3'); 
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'starperfect3');
+        perfl3.attr('class',  'none') 
+
+        var perfl4 = $('#starperfect4'); 
+        console.log(perfl2.attr('class'));
+        perfl4.removeAttr('class', 'starperfect4');
+        perfl4.attr('class',  'none') 
+
+        var perfl5 = $('#starperfect5'); 
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'starperfect5');
+        perfl5.attr('class',  'none') 
+
+        var perfl6 = $('#starperfect6'); 
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'starperfect6');
+        perfl6.attr('class',  'none') 
+
+        var perfl7 = $('#starperfect7'); 
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'starperfect7');
+        perfl7.attr('class',  'none') 
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbacky');
+        llp.attr('class',  'none')
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackys');
+        llp.attr('class',  'none')
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackyg');
+        llp.attr('class',  'none')
+}
+    
+    function good(){
+        var good = $('#feedback');
+        console.log(good.attr('class'));
+        good.removeAttr('class', 'feedback-bad','feedback-none', 'feedback-ok','feedback-super','feedback-perfect','feedback-yeah','feedback-goldBad' );
+        good.attr('class',  'feedback-good') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+
+        var perfl1 = $('#starperfect1'); 
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'starperfect1');
+        perfl1.attr('class',  'none') 
+
+        var perfl2 = $('#starperfect2'); 
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'starperfect2');
+        perfl2.attr('class',  'none') 
+
+        var perfl3 = $('#starperfect3'); 
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'starperfect3');
+        perfl3.attr('class',  'none') 
+
+        var perfl4 = $('#starperfect4'); 
+        console.log(perfl2.attr('class'));
+        perfl4.removeAttr('class', 'starperfect4');
+        perfl4.attr('class',  'none') 
+
+        var perfl5 = $('#starperfect5'); 
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'starperfect5');
+        perfl5.attr('class',  'none') 
+
+        var perfl6 = $('#starperfect6'); 
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'starperfect6');
+        perfl6.attr('class',  'none') 
+
+        var perfl7 = $('#starperfect7'); 
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'starperfect7');
+        perfl7.attr('class',  'none') 
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbacky');
+        llp.attr('class',  'none')
+  
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackys');
+        llp.attr('class',  'none')
+
+    $('#background_bar').height(function (index, height) {return (height + 2)})
+
+
+        
+}
+
+    function supeR(){
+
+
+
+        var supeR = $('#feedback');
+        console.log(supeR.attr('class'));
+        supeR.removeAttr('class', 'feedback-bad','feedback-none', 'feedback-good','feedback-ok','feedback-perfect','feedback-yeah','feedback-goldBad' );
+        supeR.attr('class',  'feedback-super') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+
+        
+        var perfl1 = $('#starperfect1'); 
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'starperfect1');
+        perfl1.attr('class',  'none') 
+
+        var perfl2 = $('#starperfect2'); 
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'starperfect2');
+        perfl2.attr('class',  'none') 
+
+        var perfl3 = $('#starperfect3'); 
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'starperfect3');
+        perfl3.attr('class',  'none') 
+
+        var perfl4 = $('#starperfect4'); 
+        console.log(perfl2.attr('class'));
+        perfl4.removeAttr('class', 'starperfect4');
+        perfl4.attr('class',  'none') 
+
+        var perfl5 = $('#starperfect5'); 
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'starperfect5');
+        perfl5.attr('class',  'none') 
+
+        var perfl6 = $('#starperfect6'); 
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'starperfect6');
+        perfl6.attr('class',  'none') 
+
+        var perfl7 = $('#starperfect7'); 
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'starperfect7');
+        perfl7.attr('class',  'none') 
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbacky');
+        llp.attr('class',  'none')
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'none');
+        llp.attr('class',  'feedbackys')
+    $('#background_bar').height(function (index, height) {return (height + 4)})
+}
+
+
+    function perfect(){
+
+
+        var perf = $('#feedback');
+        console.log(perf.attr('class'));
+        perf.removeAttr('class', 'feedback-bad','feedback-none', 'feedback-good','feedback-super','feedback-ok','feedback-yeah','feedback-goldBad' );
+        perf.attr('class',  'feedback-perfect') 
+
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'none');
+        perfl.attr('class',  'feedback-label') 
+
+        var perfl1 = $('#starperfect1'); //1
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'none');
+        perfl1.attr('class',  'starperfect1') 
+
+        var perfl2 = $('#starperfect2'); //2
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'none');
+        perfl2.attr('class',  'starperfect2') 
+
+        var perfl3 = $('#starperfect3'); //3
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'none');
+        perfl3.attr('class',  'starperfect3') 
+
+        var perfl4 = $('#starperfect4'); //4
+        console.log(perfl4.attr('class'));
+        perfl4.removeAttr('class', 'none');
+        perfl4.attr('class',  'starperfect4') 
+
+        var perfl5 = $('#starperfect5'); //5
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'none');
+        perfl5.attr('class',  'starperfect5') 
+
+        var perfl6 = $('#starperfect6'); //6
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'none');
+        perfl6.attr('class',  'starperfect6') 
+
+        var perfl7 = $('#starperfect7'); //7
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'none');
+        perfl7.attr('class',  'starperfect7') 
+
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'none');
+        llp.attr('class',  'feedbacky') 
+        var llp = $('#feedbackyl');
+        console.log(llp.attr('class'));
+        llp.removeAttr('class', 'feedbackys');
+        llp.attr('class',  'none')
+
+    $('#background_bar').height(function (index, height) {return (height + 6)})
+
+}
+
+function yeahnone(){
+
+        var yeah = $('#feedbacky');
+        console.log(yeah.attr('class'));
+        yeah.removeAttr('class', 'feedback-yeah');
+        yeah.attr('class',  'feedback-none') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+
+        var perfl1 = $('#starperfect1'); 
+        console.log(perfl1.attr('class'));
+        perfl1.removeAttr('class', 'starperfect1');
+        perfl1.attr('class',  'none') 
+
+        var perfl2 = $('#starperfect2'); 
+        console.log(perfl2.attr('class'));
+        perfl2.removeAttr('class', 'starperfect2');
+        perfl2.attr('class',  'none') 
+
+        var perfl3 = $('#starperfect3'); 
+        console.log(perfl3.attr('class'));
+        perfl3.removeAttr('class', 'starperfect3');
+        perfl3.attr('class',  'none') 
+
+        var perfl4 = $('#starperfect4'); 
+        console.log(perfl2.attr('class'));
+        perfl4.removeAttr('class', 'starperfect4');
+        perfl4.attr('class',  'none') 
+
+        var perfl5 = $('#starperfect5'); 
+        console.log(perfl5.attr('class'));
+        perfl5.removeAttr('class', 'starperfect5');
+        perfl5.attr('class',  'none') 
+
+        var perfl6 = $('#starperfect6'); 
+        console.log(perfl6.attr('class'));
+        perfl6.removeAttr('class', 'starperfect6');
+        perfl6.attr('class',  'none') 
+
+        var perfl7 = $('#starperfect7'); 
+        console.log(perfl7.attr('class'));
+        perfl7.removeAttr('class', 'starperfect7');
+        perfl7.attr('class',  'none') 
+}
+    
+    function yeah(){
+        var gd = 1;
+        var yeah = $('#feedbacky');
+        console.log(yeah.attr('class'));
+        yeah.removeAttr('class', 'feedback-none');
+        yeah.attr('class',  'feedback-yeah') 
+        var perfl = $('#feedback-label');
+        console.log(perfl.attr('class'));
+        perfl.removeAttr('class', 'feedback-label');
+        perfl.attr('class',  'none') 
+
+
+
+    $('#background_bar').height(function (index, height) {return (height + 4)})
+    setInterval( yeahnone ,1300)
+}
+
+    function goldBad(){
+
+}
+    
+
+function goldmove(){
+    /*var gdgd = new Audio('/audio/hud_goldmove_explo.mp3');
+    gdgd.play()*/
+    var gd = $('#gold_move');
+        console.log(gd.attr('class'));
+        gd.removeAttr('class', 'none');
+        gd.attr('class', 'g-d');
+        setInterval(deleteGold, 1000)
+}
+
+function deleteGold(){
+    var gd = $('#gold_move');
+        console.log(gd.attr('class'));
+        gd.removeAttr('class', 'none', 'g-d');
+        gd.attr('class', 'none');
+        gdgd.stop()
+}
+
+</script>
+
+<script src="/analytics.js"></script>
+<script src="/tracker.js"></script>
+<script src="/trackerData.js"></script>
+</body>
+</html>
